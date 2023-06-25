@@ -53,7 +53,7 @@ logger = logger_helper.setup_logger(__name__, LOG_FILENAME, DEBUG, DEBUG_FILENAM
 
 
 def parse_action(action: Action, direction: Direction) -> Direction:
-    log_message = f"Parsing action: {action} with direction {direction}. "
+    debug_message = f"Parsing action: {action} with direction {direction}. "
     idx = clockwise_directions.index(direction)
     match action:
         case Action.STRAIGHT:
@@ -66,8 +66,8 @@ def parse_action(action: Action, direction: Direction) -> Direction:
             new_idx = (idx - 1) % 4
         case _:
             raise ValueError(f"Couldn't parse action {action}.")
-    log_message += f"New direction is {clockwise_directions[new_idx]}."
-    logger.debug(log_message)
+    debug_message += f"New direction is {clockwise_directions[new_idx]}."
+    logger.debug(debug_message)
     return clockwise_directions[new_idx]
 
 
