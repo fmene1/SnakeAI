@@ -15,14 +15,13 @@ The project contains the following files:
 The file [requirements.txt](https://github.com/fmene1/SnakeAI/blob/main/requirements.txt) has the required packages.
 
 For Windows the following command should automatically install the requirements.
+
 `pip install -r requirements.txt`
 
 ## How to run
 ### AI Training
-Run the simulation with
-`python main.py`
+Run the simulation with `python main.py`
 ### Human Snake Game
-Run the game with
-`python original_game.py`
+Run the game with `python original_game.py`
 
 Use arrow keys to move the snake and Esc to close the window.
