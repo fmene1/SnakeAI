@@ -5,7 +5,7 @@ import os
 # Set global level of debugging
 # True = every logger is by default set to debug logging
 # False = every logger is by default set not to debug logging
-GLOBAL_DEBUG = True
+GLOBAL_DEBUG = False
 GLOBAL_LOG_FILENAME = "log.log"
 GLOBAL_DEBUG_FILENAME = "debug.log"
 LOGGING_LEVEL = logging.INFO
@@ -23,7 +23,7 @@ str_console_format = "[%(levelname)s - %(name)s] - %(message)s"
 date_format = "%H:%M:%S"
 file_formatter = logging.Formatter(str_file_format, datefmt=date_format)
 console_formatter = logging.Formatter(str_console_format, datefmt=date_format)
-# List of every file loggers are writing to
+# Set of every file the loggers are writing to
 logging_filelist = set()
 
 
@@ -34,7 +34,7 @@ def setup_logger(name: str, log_filename: str | None, debug: bool | None, debug_
         log_filename = GLOBAL_LOG_FILENAME
     if debug_filename is None:
         debug_filename = GLOBAL_DEBUG_FILENAME
-    # If the logging file haven't been set yet but it already exists, we wipe it before opening the file stream
+    # If the logging file haven't been set yet but already exists, we wipe it before opening the file stream
     if log_filename not in logging_filelist:
         if os.path.exists(log_filename):
             os.remove(log_filename)
