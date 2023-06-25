@@ -20,6 +20,8 @@ Use `pip install -r requirements.txt` to automatically install the required pack
 ## How to run
 ### AI Training
 Run the simulation with `python main.py`.
+
+Close the game window to exit the program at any time.
 ### Human Snake Game
 Run the game with `python original_game.py`.
 
