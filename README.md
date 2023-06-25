@@ -24,4 +24,5 @@ Run the simulation with
 ### Human Snake Game
 Run the game with
 `python original_game.py`
+
 Use arrow keys to move the snake and Esc to close the window.
