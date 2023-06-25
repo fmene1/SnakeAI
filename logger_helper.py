@@ -5,7 +5,7 @@ import os
 # Set global level of debugging
 # True = every logger is by default set to debug logging
 # False = every logger is by default set not to debug logging
-GLOBAL_DEBUG = True
+GLOBAL_DEBUG = False
 GLOBAL_LOG_FILENAME = "log.log"
 GLOBAL_DEBUG_FILENAME = "debug.log"
 LOGGING_LEVEL = logging.INFO
