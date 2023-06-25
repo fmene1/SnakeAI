@@ -1,5 +1,5 @@
 # SnakeAI
-A neural network is trained via **reinforcement learning** to play a custom made implementation of the famous snake game.
+A neural network is trained via **reinforcement learning** to play a custom made implementation of the famous [snake game](https://en.wikipedia.org/wiki/Snake_(video_game_genre)).
 
 ## Project overview
 The project contains the following files:
