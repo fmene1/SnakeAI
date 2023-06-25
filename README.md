@@ -13,6 +13,7 @@ The project contains the following files:
 
 ## How to install
 The file [requirements.txt](https://github.com/fmene1/SnakeAI/blob/main/requirements.txt) has the required packages.
+
 For Windows the following command should automatically install the requirements.
 `pip install -r requirements.txt`
 
