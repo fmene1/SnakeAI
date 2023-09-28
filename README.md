@@ -25,4 +25,4 @@ Close the game window to exit the program at any time.
 ### Human Snake Game
 Run the game with `python original_game.py`.
 
-Use arrow keys to move the snake and Esc to close the window.
+Use arrow keys to move the snake and <kbd>Esc</kbd> to close the window.
