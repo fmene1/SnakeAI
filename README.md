@@ -1,6 +1,12 @@
 # SnakeAI
 A neural network is trained via **reinforcement learning** to play a custom made implementation of the famous [snake video game](https://en.wikipedia.org/wiki/Snake_(video_game_genre)).
 
+![](Media/demo.gif)
+
+Real time data stream visualization
+
+![](Media/real-time-data-stream.png)
+
 ## Project overview
 The project contains the following files:
 - [original_game.py](https://github.com/fmene1/SnakeAI/blob/main/original_game.py) - Human playable snake game logic, implemented with [pygame](https://www.pygame.org/news).
@@ -8,7 +14,7 @@ The project contains the following files:
 - [main.py](https://github.com/fmene1/SnakeAI/blob/main/main.py) - Main entry point containing the training loop.
 - [agent.py](https://github.com/fmene1/SnakeAI/blob/main/agent.py) - AI agent making decisions.
 - [model.py](https://github.com/fmene1/SnakeAI/blob/main/model.py) - Two layer neural network, implemented with [pytorch](https://pytorch.org/).
-- [plot.py](https://github.com/fmene1/SnakeAI/blob/main/plot.py) - Interactive plots.
+- [plot.py](https://github.com/fmene1/SnakeAI/blob/main/plot.py) - Interactive plots and real time data visualization.
 - [logger_helper.py](https://github.com/fmene1/SnakeAI/blob/main/logger_helper.py) - Logs generation.
 
 ## How to install
